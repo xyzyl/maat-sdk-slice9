@@ -1,0 +1,28 @@
+[package]
+name = "maat-agent"
+version = "0.1.0"
+edition = "2021"
+description = "Maat SDK: agent-side identity, delegation issuance, anchor construction, gateway client."
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+maat = { workspace = true }
+maat-sdk-core = { path = "../maat-sdk-core" }
+
+tokio = { workspace = true }
+reqwest = { workspace = true }
+async-trait = { workspace = true }
+
+serde = { workspace = true }
+serde_json = { workspace = true }
+base64 = { workspace = true }
+
+thiserror = { workspace = true }
+tracing = { workspace = true }
+
+uuid = { workspace = true }
+parking_lot = { workspace = true }
+
+[dev-dependencies]
+tokio-test = { workspace = true }
+tokio = { workspace = true }

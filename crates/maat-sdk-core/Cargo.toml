@@ -1,0 +1,15 @@
+[package]
+name = "maat-sdk-core"
+version = "0.1.0"
+edition = "2021"
+description = "Shared core for the Maat SDK: action descriptors, constraint composition, scope expressions, shared errors."
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+maat = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+serde = { workspace = true }
